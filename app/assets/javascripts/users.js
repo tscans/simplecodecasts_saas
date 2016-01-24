@@ -1,6 +1,8 @@
 $(document).ready(function() {
   
-  jAlert('This is a custom alert box', 'Alert Dialog');
+  function myFunction() {
+    alert("Hello! I am an alert box!");
+}
   Stripe.setPublishableKey($('meta[name="stripe-key"]').attr('content'));
   // Watch for a form submission:
   $("#form-submit-btn").click(function(event) {
