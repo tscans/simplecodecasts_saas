@@ -1,8 +1,8 @@
-$(document).ready(function() {
-  
-  function myFunction() {
+function myFunction() {
     alert("Hello! I am an alert box!");
 }
+$(document).ready(function() {
+  
   Stripe.setPublishableKey($('meta[name="stripe-key"]').attr('content'));
   // Watch for a form submission:
   $("#form-submit-btn").click(function(event) {
