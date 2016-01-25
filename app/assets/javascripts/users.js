@@ -1,6 +1,3 @@
-function myFunction() {
-    alert("Hello! I am an alert box!");
-}
 $(document).ready(function() {
   
   Stripe.setPublishableKey($('meta[name="stripe-key"]').attr('content'));
@@ -28,7 +25,7 @@ $(document).ready(function() {
   
   function stripeResponseHandler(status, response) {
     // Get a reference to the form:
-    var f = $("#new_user");
+    var f = $(".new_user");
 
     // Get the token from the response:
     var token = response.id;
